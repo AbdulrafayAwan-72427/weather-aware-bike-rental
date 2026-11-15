@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+.uv-cache/
+
+# Data (downloaded, reproducible via bike/data.py — do not commit the CSV)
+data/
+
+# Trained model (37 MB Random Forest). It is included in the submission
+# archive, but not committed to Git — regenerate it any time with:
+#   python -m bike.train
+artifacts/*.joblib
+
+# Local / OS artefacts
+.DS_Store
+Thumbs.db

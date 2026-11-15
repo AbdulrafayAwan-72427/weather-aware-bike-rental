@@ -1,0 +1,158 @@
+{
+  "selected": "Random Forest",
+  "selection": "lowest validation MAE; frozen training fit, no refit",
+  "dataset_sha256": "373339b71a8935d69e9af0abf26a70744632119862eeb3919efb389a7b749c60",
+  "rows": 8760,
+  "missing_cells": 0,
+  "closed_hours": 295,
+  "splits": {
+    "train": {
+      "n": 6132,
+      "start": "2017-12-01 00:00:00",
+      "end": "2018-08-13 11:00:00",
+      "closed_hours": 48
+    },
+    "validation": {
+      "n": 1308,
+      "start": "2018-08-13 12:00:00",
+      "end": "2018-10-06 23:00:00",
+      "closed_hours": 151
+    },
+    "test": {
+      "n": 1320,
+      "start": "2018-10-07 00:00:00",
+      "end": "2018-11-30 23:00:00",
+      "closed_hours": 96
+    }
+  },
+  "models": {
+    "Hourly mean": {
+      "fit_seconds": 0.0025183999678120017,
+      "validation": {
+        "mae": 420.2624364854047,
+        "rmse": 566.2902784014586
+      },
+      "test": {
+        "mae": 278.61046242512896,
+        "rmse": 397.47908833140764
+      },
+      "test_operating": {
+        "mae": 300.46226339964886,
+        "rmse": 412.7722966113966
+      }
+    },
+    "Linear Regression": {
+      "fit_seconds": 0.05772380001144484,
+      "validation": {
+        "mae": 302.18776220379965,
+        "rmse": 422.8630897109889
+      },
+      "test": {
+        "mae": 286.37548094689777,
+        "rmse": 387.21381065329876
+      },
+      "test_operating": {
+        "mae": 308.83630298194856,
+        "rmse": 402.11205720022576
+      }
+    },
+    "Random Forest": {
+      "fit_seconds": 2.029732899973169,
+      "validation": {
+        "mae": 162.22103182272545,
+        "rmse": 250.86152424751324
+      },
+      "test": {
+        "mae": 243.34598047570395,
+        "rmse": 346.4124420473375
+      },
+      "test_operating": {
+        "mae": 262.43193972870034,
+        "rmse": 359.7408353704911
+      }
+    }
+  },
+  "segments_operating_only": {
+    "peak_hours": {
+      "n": 306,
+      "metrics": {
+        "mae": 482.3360396983479,
+        "rmse": 584.854784468635
+      }
+    },
+    "off_peak": {
+      "n": 918,
+      "metrics": {
+        "mae": 189.13057307215118,
+        "rmse": 241.93577358215103
+      }
+    },
+    "wet": {
+      "n": 76,
+      "metrics": {
+        "mae": 162.99995651826245,
+        "rmse": 225.0312788534587
+      }
+    },
+    "dry": {
+      "n": 1148,
+      "metrics": {
+        "mae": 269.01454488897326,
+        "rmse": 366.917563057283
+      }
+    },
+    "season_Winter": {
+      "n": 0,
+      "metrics": null
+    },
+    "season_Spring": {
+      "n": 0,
+      "metrics": null
+    },
+    "season_Summer": {
+      "n": 0,
+      "metrics": null
+    },
+    "season_Autumn": {
+      "n": 1224,
+      "metrics": {
+        "mae": 262.43193972870034,
+        "rmse": 359.7408353704911
+      }
+    }
+  },
+  "training_weather_ranges": {
+    "temperature": [
+      -17.8,
+      39.4
+    ],
+    "humidity": [
+      0.0,
+      98.0
+    ],
+    "wind_speed": [
+      0.0,
+      7.4
+    ],
+    "visibility": [
+      27.0,
+      2000.0
+    ],
+    "dew_point": [
+      -30.6,
+      27.2
+    ],
+    "solar": [
+      0.0,
+      3.52
+    ],
+    "rainfall": [
+      0.0,
+      35.0
+    ],
+    "snowfall": [
+      0.0,
+      5.1
+    ]
+  }
+}
