@@ -21,7 +21,7 @@ validation 13 Aug – 6 Oct 2018 (1,308 h), final test 7 Oct – 30 Nov 2018
 | Model | Validation MAE | Validation RMSE | Test MAE | Test RMSE | Fit time |
 |---|---:|---:|---:|---:|---:|
 | Hourly-mean baseline | 420.3 | 566.3 | 278.6 | 397.5 | <0.01 s |
-| Linear Regression | 302.2 | 422.9 | 286.4 | 387.2 | 0.06 s |
+| Linear Regression | 302.2 | 422.9 | 286.4 | 387.2 | 0.07 s |
 | **Random Forest (selected)** | **162.2** | **250.9** | **243.3** | **346.4** | 2.98 s |
 
 Errors are rentals/hour. Fit times are from `reports/metrics.json` (the
