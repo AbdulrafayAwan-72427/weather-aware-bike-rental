@@ -66,11 +66,12 @@ python -m pytest tests/ -q
 python -m bike.app
 ```
 
-Then open http://127.0.0.1:5000/ in a browser. The dataset and trained
-model are already in the archive, so the app works immediately; the
-`bike.eda` and `bike.train` steps re-download the data and regenerate the
-model and reports from source (about 6 s for EDA and 14 s for training on
-the verification machine; timings vary).
+After training, open http://127.0.0.1:5000/ in a browser.
+
+The GitHub repository excludes the downloaded dataset and trained model.
+On a fresh clone, run bike.eda and bike.train before starting bike.app.
+The dataset downloads automatically when it is missing. Training creates
+artifacts/model.joblib and regenerates the evaluation reports.
 
 On Linux or macOS, replace the activation line with:
 
@@ -78,7 +79,7 @@ On Linux or macOS, replace the activation line with:
 source .venv/bin/activate
 ```
 
-Python 3.11+ is required; the tested version is Python 3.12.3.
+Python 3.12+ is required.
 
 ### Exact tested dependency versions
 
